@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* VARIABLES */
 :root {
   --font-size: 16px;
   /* COLORS */
@@ -20,11 +20,11 @@
   /* OTHERS */
   --input-height: 50px;
 }
-
+/* mobile design */
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--font-size);
-  height: 100vh;
+  min-height: 100vh;
   font-weight: 400;
   color: var(--desaturated-red);
   display: flex;
@@ -106,6 +106,12 @@ form {
   cursor: pointer;
 }
 
+.img-desktop-container {
+  display: none;
+}
+
+/* JS classes */
+
 .error-icon {
   position: absolute;
   top: calc(var(--input-height) * 0.2);
@@ -128,14 +134,11 @@ form {
   color: var(--dark-grayish-red);
 }
 
-.img-desktop-container {
-  display: none;
-}
-
 .hidden {
   display: none;
 }
 
+/* footer */
 footer {
   margin-top: 1rem;
   text-align: center;
@@ -150,6 +153,8 @@ footer a {
 footer a:hover {
   color: var(--soft-red);
 }
+
+/* media queries */
 
 @media (min-width: 1024px) {
   main {
@@ -175,10 +180,7 @@ footer a:hover {
     line-height: 1.2;
   }
 
-  .upper-heading-part {
-    font-size: 3em;
-  }
-
+  .upper-heading-part,
   h1 {
     font-size: 3em;
   }
@@ -211,10 +213,7 @@ footer a:hover {
     width: 50%;
   }
 
-  .upper-heading-part {
-    font-size: 4em;
-  }
-
+  .upper-heading-part,
   h1 {
     font-size: 4em;
   }
