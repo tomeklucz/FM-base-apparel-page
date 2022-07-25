@@ -87,6 +87,10 @@ form {
   font-weight: 400;
 }
 
+.email-input-error {
+  border: 2px solid var(--soft-red);
+}
+
 .submit-btn {
   position: absolute;
   right: 20px;
@@ -98,7 +102,37 @@ form {
   box-shadow: 0px 10px 35px 0px var(--desaturated-red);
 }
 
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.error-icon {
+  position: absolute;
+  top: calc(var(--input-height) * 0.2);
+  right: 30%;
+  height: calc(var(--input-height) * 0.6);
+}
+
+.message {
+  font-weight: 400;
+  font-size: 0.8em;
+  padding: 10px 40px;
+  text-align: left;
+}
+
+.message-error {
+  color: var(--soft-red);
+}
+
+.message-success {
+  color: var(--dark-grayish-red);
+}
+
 .img-desktop-container {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
