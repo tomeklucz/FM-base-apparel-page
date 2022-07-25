@@ -150,3 +150,72 @@ footer a {
 footer a:hover {
   color: var(--soft-red);
 }
+
+@media (min-width: 1024px) {
+  main {
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .content-container {
+    padding: 4% 8%;
+    width: 50%;
+  }
+
+  .img-logo {
+    margin: 0;
+    width: 12rem;
+  }
+
+  .main-heading {
+    margin: 7rem 0 2rem;
+    line-height: 1.2;
+  }
+
+  .upper-heading-part {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .main-text {
+    padding: 0;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop-container {
+    display: block;
+  }
+
+  .img-desktop-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 70vw;
+  }
+
+  .content-container {
+    padding: 5% 10%;
+    width: 50%;
+  }
+
+  .upper-heading-part {
+    font-size: 4em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+}
